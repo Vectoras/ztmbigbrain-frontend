@@ -1,0 +1,30 @@
+{
+  "name": "smart-brain",
+  "version": "1.0.0",
+  "description": "Project in The Complete Web Developer in 2021: Zero to Mastery course at https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/",
+  "main": "./js/npm_modules_imports.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vectoras/ztmbigbrain.git"
+  },
+  "keywords": [
+    "Project",
+    "ZTM",
+    "Smart",
+    "Brain",
+    "Learning"
+  ],
+  "author": "Vectoras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vectoras/ztmbigbrain/issues"
+  },
+  "homepage": "https://github.com/Vectoras/ztmbigbrain#readme",
+  "dependencies": {
+    "particlesjs": "^2.2.3",
+    "vanilla-tilt": "^1.7.0"
+  }
+}
