@@ -1,5 +1,5 @@
-import * as particles_module from "../node_modules/particlesjs/src/particles.js";
-import VanillaTilt from "../node_modules/vanilla-tilt/src/vanilla-tilt.js";
+// import * as particles_module from "../node_modules/particlesjs/src/particles.js";
+// import VanillaTilt from "../node_modules/vanilla-tilt/src/vanilla-tilt.js";
 
 // helper functions
 function setAttributes(element, attributes) {
