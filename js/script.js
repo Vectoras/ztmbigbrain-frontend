@@ -137,7 +137,7 @@ function pageApp(user) {
   formEl.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    fetch(`${SERVER}/image"`, {
+    fetch(`${SERVER}/image`, {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: user.id, imageSrc: imageEl.src }),
