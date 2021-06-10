@@ -8,6 +8,10 @@ function setAttributes(element, attributes) {
   }
 }
 
+// Server address
+// const SERVER = "http://localhost:3000";
+const SERVER = "https://rocky-mountain-44660.herokuapp.com";
+
 // caching DOM Elements
 const mainPageContent = document.querySelector("#page-main-content");
 const mainPageNavigation = document.querySelector("#navigation");
@@ -133,7 +137,7 @@ function pageApp(user) {
   formEl.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3000/image", {
+    fetch(`${SERVER}/image"`, {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: user.id, imageSrc: imageEl.src }),
@@ -229,7 +233,7 @@ function pageRegister() {
   // --- register functionality
   // signIn Function
   async function register() {
-    let response = await fetch("http://localhost:3000/register", {
+    let response = await fetch(`${SERVER}/register`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -311,7 +315,7 @@ function pageSignIn() {
   // --- signIn functionality
   // signIn Function
   async function signIn() {
-    let response = await fetch("http://localhost:3000/signin", {
+    let response = await fetch(`${SERVER}/signin`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
